@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  yii:
+    build: .
+    ports:
+      - '80:80'
+    depends_on:
+      - db
+  db:
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: yii2basic
+      MYSQL_USER: yiitest
+      MYSQL_PASSWORD: yii2basic_password
+    network_mode: host 
+ 
