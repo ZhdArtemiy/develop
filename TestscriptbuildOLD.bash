@@ -2,7 +2,7 @@
 echo "--Build Started--"
 echo "--Check run in bash--"
 if [ "$BASH" != "/bin/bash" ]; then
-    echo "Требуется запускать скрипт в bash"
+    echo "Г’Г°ГҐГЎГіГҐГІГ±Гї Г§Г ГЇГіГ±ГЄГ ГІГј Г±ГЄГ°ГЁГЇГІ Гў bash"
     exit 1
 fi
 set -e 
